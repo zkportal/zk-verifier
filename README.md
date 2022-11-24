@@ -2,6 +2,12 @@
 
 A WebAssembly library for verifying zero-knowledge proofs from zkPortal.
 
+This library is derived from [ark-circom](https://github.com/gakonst/ark-circom).
+
+Proof verification function is exported and compiled into a WebAssembly module using `wasm-pack`.
+
+This library is ES2015 module for now, so that means you probably need to transpile it, e.g. to run in Node.
+
 ## Usage
 
 ```js
