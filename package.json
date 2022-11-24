@@ -1,0 +1,20 @@
+{
+  "name": "zk-verifier",
+  "author": "zkPortal",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zkportal/zk-verifier"
+  },
+  "bugs": "https://github.com/zkportal/zk-verifier",
+  "license": "MIT",
+  "description": "A WebAssembly library for verifying zero-knowledge proofs from zkPortal",
+  "files": [
+    "zk_verifier_bg.wasm",
+    "zk_verifier.js",
+    "zk_verifier.d.ts"
+  ],
+  "module": "zk_verifier.js",
+  "types": "zk_verifier.d.ts",
+  "sideEffects": false
+}
