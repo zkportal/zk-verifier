@@ -1,12 +1,19 @@
 {
   "name": "zk-verifier",
-  "author": "zkPortal",
+  "author": {
+    "name": "zkPortal",
+    "url": "https://github.com/zkportal"
+  },
   "version": "1.0.0",
+  "scripts": {
+    "build": "rollup --c rollup.config.js && cp src/zk_verifier_bg.wasm dist/ && cp src/zk_verifier.d.ts dist/zk-verifier.d.ts",
+    "clean": "rimraf dist/*"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/zkportal/zk-verifier"
   },
-  "bugs": "https://github.com/zkportal/zk-verifier",
+  "bugs": "https://github.com/zkportal/zk-verifier/issues",
   "license": "MIT",
   "description": "A WebAssembly library for verifying zero-knowledge proofs from zkPortal",
   "files": [
@@ -14,7 +21,13 @@
     "zk_verifier.js",
     "zk_verifier.d.ts"
   ],
-  "module": "zk_verifier.js",
-  "types": "zk_verifier.d.ts",
-  "sideEffects": false
+  "browser": "dist/index.js",
+  "main": "dist/zk-verifier.common.js",
+  "module": "dist/zk-verifier.es.js",
+  "cdn": "dist/zk-verifier.umd.min.js",
+  "types": "dist/zk-verifier.d.ts",
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "rollup": "^3.4.0"
+  }
 }
