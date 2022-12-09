@@ -8,10 +8,8 @@ Proof verification function is exported and compiled into a WebAssembly module u
 
 ## Usage
 
-The package is not published to NPM yet. Download `dist` directory if you want to add files to your project, or download the whole repository and import it as a local package.
-
 ```js
-import init, { verify_proof } from 'zk-verifier';
+import init, { verify_proof } from '@zkportal/zk-verifier';
 
 async function verify() {
   await init(); // uses bundled WebAssembly module, you can also provide an argument, see API section of the README
