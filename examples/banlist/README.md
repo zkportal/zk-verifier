@@ -1,13 +1,18 @@
 # Banlist example
 
-This is an example of verifying a circuit, which proves that provided country code string is not in the list of banned country codes.
+This is a React app with an example of using `@zkportal/zk-verifier` to verify a proof.
 
-At the time of proof creation, the following arguments were supplied:
-- a country code "NL" as big-endian bits of ASCII characters
-- a secret as 128 bits
-- banlist string "USIRRU" as big-endian bits of ASCII characters
-- Pedersen hash of country code + secret, as 2 BigIntegers
+The project contains JSON files with serialized inputs you can use to verify that supplied country code "NL" is not in the list of banned countries "US IR RU".
+Those files are:
+- `src/proof.json`
+- `src/verifying_key.json`
+- `src/public_inputs.json`
 
-To verify a proof, you supply only the following inputs (serialized into `public_inputs.json`):
-- Pedersen hash of country code + secret
-- banlist string
+You can find an example of integrating proof verification in `src/App.js`
+
+## Run this example
+
+1. Install dependencies `npm install`
+2. Start dev server `npm run start`
+3. You will have a page opened in your default browser.
+4. Press "Verify" button
