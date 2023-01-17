@@ -16,7 +16,7 @@ The user is considered older than the minimum age because their "date of birth" 
 
 In practice, you can verify that a user is older than 18 years old by the following steps:
 1. Get current timestamp and subtract 18 years. That's going to be "minimum age" for the circuit.
-2. Get user's date of birth as timestamp. That's going to be "user age" for the circuit.
+2. Get user's date of birth as timestamp. That's going to be "user age" for the circuit. User age timestamp must be a smaller number that the minimum age timestamp.
 3. Create a proof
 
 You can find an example of integrating proof verification in `src/App.js`
