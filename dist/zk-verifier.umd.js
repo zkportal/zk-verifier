@@ -1,13 +1,13 @@
 /*
-* zk-verifier v1.0.0 (https://github.com/zkportal/zk-verifier)
+* zk-verifier v2.0.0 (https://github.com/zkportal/zk-verifier)
 * Based on: ark-circom (https://github.com/gakonst/ark-circom)
 * Copyright 2021 Georgios Konstantopoulos (https://github.com/gakonst)
-* Copyright 2022 zkPortal (https://github.com/zkportal)
+* Copyright 2022-2023 zkPortal (https://github.com/zkportal)
 */
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
     typeof define === 'function' && define.amd ? define(['exports'], factory) :
-    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global["zk-verifier"] = {}));
+    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global["@zkportal/zk-verifier"] = {}));
 })(this, (function (exports) { 'use strict';
 
     let wasm;

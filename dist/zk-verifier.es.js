@@ -1,8 +1,8 @@
 /*
-* zk-verifier v1.0.0 (https://github.com/zkportal/zk-verifier)
+* zk-verifier v2.0.0 (https://github.com/zkportal/zk-verifier)
 * Based on: ark-circom (https://github.com/gakonst/ark-circom)
 * Copyright 2021 Georgios Konstantopoulos (https://github.com/gakonst)
-* Copyright 2022 zkPortal (https://github.com/zkportal)
+* Copyright 2022-2023 zkPortal (https://github.com/zkportal)
 */
 let wasm;
 

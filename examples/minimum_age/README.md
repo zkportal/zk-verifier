@@ -5,12 +5,13 @@ This is a React app with an example of using `@zkportal/zk-verifier` to verify a
 The project contains JSON files with serialized inputs you can use to verify that supplied user age is "older" than minimum age.
 Those files are:
 - `src/proof.json`
-- `src/verifying_key.json`
 - `src/public_inputs.json`
 
-In this example, the "minimum age" is 1669637350, which is Monday, November 28, 2022 12:09:10 PM GMT.
+This example is also fetching the currently used verifying key from zkPortal backend.
 
-The "user age" is 1669637349, which is Monday, November 28, 2022 12:09:09 PM GMT.
+In this example, the "minimum age" is 1113565045, which is April 15, 2005 11:37:25 AM.
+
+The "user age" is 0, which is January 1, 1970 12:00:00 AM.
 
 The user is considered older than the minimum age because their "date of birth" is earlier than the "minimum age".
 
