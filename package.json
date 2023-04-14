@@ -38,8 +38,5 @@
   "devDependencies": {
     "rimraf": "^3.0.2",
     "rollup": "^3.4.0"
-  },
-  "dependencies": {
-    "create-react-app": "^5.0.1"
   }
 }
