@@ -31,10 +31,9 @@ async function verify() {
 
 Examples provide the following files:
 - `proof.json` - contains serialized decimal bytes of a zero-knowledge proof
-- `verifying_key.json` - contains serialized decimal bytes of a verifying key you can use with the proof to verify it
 - `public_inputs.json` - contains serialized decimal bytes of public inputs you need to supply to verify the proof
 
 If you use a bundler, then you can import those files, then create `Uint8Array` arrays from them and supply to `verify_proof` function.
 
-- [Banlist](examples/banlist/) This directory contains JSON files with serialized inputs you can use to verify that supplied country code "NL" is not in the list of banned countries "US IR RU".
+- [Banlist](examples/banlist/) This directory contains JSON files with serialized inputs you can use to verify that supplied country code "NL" is not in the list of banned countries "KP RU IR SO".
 - [Minimum age](examples/minimum_age/) This directory contains JSON files with serialized inputs you can use to verify that supplied user's date of birth is earlier than the date of minimum age.
